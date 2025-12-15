@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+/* POur l'effet de mouvement au scroll y'know */
+@keyframes goober-fast {
+    from {
+      transform: translateY(0) ;
+    }
+    to {
+      transform: translateY(25vw);
+    }
+  }
+@keyframes goober {
+    from {
+      transform: translateY(0) ;
+    }
+    to {
+      transform: translateY(20vw);
+    }
+  }
+@keyframes goober-slower {
+    from {
+      transform: translateY(0) ;
+    }
+    to {
+      transform: translateY(12vw);
+    }
+  }
+@keyframes goober-slowest {
+    from {
+      transform: translateY(0) ;
+    }
+    to {
+      transform: translateY(8vw);
+    }
+  }
+
+.onscroll-fast {
+    animation: goober-fast linear;
+    
+    animation-timeline: scroll(root);
+}
+.onscroll {
+    animation: goober linear;
+    
+    animation-timeline: scroll(root);
+}
+
+.onscroll-slower {
+    animation: goober-slower linear;
+    
+    animation-timeline: scroll(root);
+}
+.onscroll-slowest {
+    animation: goober-slowest linear;
+    
+    animation-timeline: scroll(root);
+}
