@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav class="border-b-4 bg-[url('img/bg.avif')] flex items-center justify-around w-full h-32 bg-no-repeat bg-cover">
+            <span class="flex items-center">
+                <img src="img/Logo.png" alt="Logo" class="h-30 w-25">
+                <div>   
+                    <p class="text-5xl font-[Unbounded]">Vent les pins</p>
+                    <span class="h-2 w-10 bg-black"></span>
+                </div> 
+            </span>
+            <ul class="flex gap-20 text-4xl font-[Unbounded]">
+                <li class="hover:cursor-pointer hover:scale-110 transition-all ease-in-out duration-250 flex flex-col items-center hover:border-b-4 hover:rotate-2"><a href="#">Activités</a></li>
+                <li class="hover:cursor-pointer hover:scale-110 transition-all ease-in-out duration-250 flex flex-col items-center hover:border-b-4 hover:rotate-2"><a href="#">Carte</a></li>
+                <li class="hover:cursor-pointer hover:scale-110 transition-all ease-in-out duration-250 flex flex-col items-center hover:border-b-4 hover:rotate-2"><a href="#">Météo</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>
